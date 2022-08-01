@@ -1,0 +1,93 @@
+body{
+    background-color: #ddd;
+}
+.clock{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    background-image: url('./img/clock4.png');
+    background-size:  cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 50px auto;
+    border: 10px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.clock::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+}
+
+/* let time = new Date();
+  let secend = time.getSeconds();
+  let munits = time.getMinutes();
+  let hour = time.getHours();
+  let rotale_s = (360 * secend) / 60;
+  let rotale_m = (360 * munits) / 60 + rotale_s / 60;
+  let rotale_h = (360 * hour) / 12 + rotale_m / 12; */
+
+
+.s{
+    width: 0;
+    height:264px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    transform: rotate(0deg);
+    
+}
+.s::before{
+    content: '';
+    width: 10px;
+    height: 150px;
+    position: absolute;
+    background-image: url('./img/sh3.png');
+    background-repeat: no-repeat;
+    background-size: 326%;
+    background-position: center;
+}
+
+.m{
+    width: 0;
+    height:225px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(45deg);
+
+}
+.m::before{
+    content: '';
+    width: 5px;
+    height: 130px;
+    position: absolute;
+    background-image: url('./img/sh1.png');
+    background-repeat: no-repeat;
+    background-size: 484%;
+    background-position: center;
+}
+.h{
+    width: 0;
+    height:140px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(80deg);
+
+}
+.h::before{
+    content: '';
+    width: 5px;
+    height: 88px;
+    position: absolute;
+    background-image: url('./img/sh2.png');
+    background-repeat: no-repeat;
+    background-size: 326%;
+    background-position: center;
+}
